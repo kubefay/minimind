@@ -10,4 +10,4 @@ if [ ! -f "./dataset/pretrain_hq.jsonl" ]; then
     exit 1
 fi
 
-cd trainer/;python train_pretrain.py
+cd trainer/;python train_pretrain.py --use_wandb
