@@ -1,8 +1,8 @@
 pip install -r requirements.txt
-pip install modelscope
 # 安装核心工具（已安装 datasets 库可跳过，CLI 已包含）
 
-modelscope download --dataset gongjy/minimind_dataset pretrain_hq.jsonl --local_dir ./dataset
+wget https://huggingface.co/datasets/jingyaogong/minimind_dataset/resolve/main/pretrain_hq.jsonl
+mv pretrain_hq.jsonl ./dataset/
 
 #检查./dataset下文件是否存在
 if [ ! -f "./dataset/pretrain_hq.jsonl" ]; then
